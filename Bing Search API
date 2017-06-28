@@ -1,0 +1,5 @@
+var client = new RestClient("https://api.cognitive.microsoft.com/bing/v5.0/search?safesearch=Moderate&mkt=en-us&offset=0&count=10&q=bill%20gates");
+var request = new RestRequest(Method.GET);
+request.AddHeader("ocp-apim-subscription-key", "0baa28c134644325bebe0e1333dc458a");
+request.AddHeader("host", "api.cognitive.microsoft.com");
+IRestResponse response = client.Execute(request);
